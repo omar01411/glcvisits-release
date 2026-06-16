@@ -31657,12 +31657,13 @@ aII:function aII(a){this.a=a},
 l1:function l1(a,b,c){this.c=a
 this.d=b
 this.a=c},
-ju:function ju(a,b,c,d,e){var _=this
+ju:function ju(a,b,c,d,e,f){var _=this
 _.c=a
 _.d=b
 _.e=c
 _.f=d
-_.a=e},
+_.r=e
+_.a=f},
 ag5:function ag5(a){this.a=a},
 ag4:function ag4(a){this.a=a},
 ym:function ym(a,b,c,d,e,f){var _=this
@@ -110915,7 +110916,7 @@ q=new A.aJL(s)
 if(n.b)q=B.vD
 else{p=t.p
 p=A.ac(A.b([new A.I1(A.b([new A.mi(A.k(q.$1(new A.aJH(new A.aJM(),r))),"Today Visits",B.az,o),new A.mi(A.k(q.$1(new A.aJI())),"Completed",A.a0R("COMPLETED").a,o),new A.mi(A.k(q.$1(new A.aJJ())),"Planned",A.a0R("PLANNED").a,o),new A.mi(A.k(q.$1(new A.aJK())),"Missed",A.a0R("MISSED").a,o)],p),o),B.dC,this.ayI(a,s)],p),B.P,B.x,B.B)
-q=p}return new A.ju("Dashboard","Overview of today's visit activity",B.eF,q,o)},
+q=p}return new A.ju("Dashboard","Overview of today's visit activity",B.eF,q,!0,o)},
 ayI(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f=J.EV(b,50).fe(0)
 if(A.b3(a,B.bn,t.w).w.a.a<600)return this.ayJ(a,f)
 s=A.ay(g,A.R("Recent Visits",g,g,g,g,A.aL(B.ad,g,g,14,g,B.aA),g,g,g),B.J,g,g,B.fS,g,g,g,B.q3,g,g,g)
@@ -110983,7 +110984,7 @@ F(a){var s=this,r=A.cX(a,!0,t.qV),q=A.b3(a,B.bn,t.w).w.a.a<600,p=s.anI(r,q)
 p=A.b([p,A.c5(null,q?20:24,null)],t.p)
 if(s.d===B.uE)p.push(s.ajr())
 else p.push(s.aAU())
-return new A.ju("Survey Audit Dashboard","Analyze general store performance and individual customer audit checklists",B.eF,A.ac(p,B.P,B.x,B.B),null)},
+return new A.ju("Survey Audit Dashboard","Analyze general store performance and individual customer audit checklists",B.eF,A.ac(p,B.P,B.x,B.B),!0,null)},
 anI(a,b){var s,r,q,p,o=this,n=null,m=o.e,l=o.a1w(),k=J.eA(a.c,new A.aUz(),t.kZ)
 k=A.S(k,k.$ti.h("ah.E"))
 s=o.Yc("Select Audit Template",A.nc(l,n,n,m,!0,k,n,new A.aUA(o),n,t.S))
@@ -111431,7 +111432,7 @@ s=A.b3(a,B.bn,t.w).w
 r=this.aDw(o)
 q=this.amk(o)
 p=t.p
-return new A.ju("User Permissions","Direct configuration panel for dynamic SQL access conditions",B.eF,s.a.a<600?A.ac(A.b([r,B.c6,q],p),B.T,B.x,B.B):new A.rz(A.aY(A.b([A.c5(r,null,320),B.o8,A.c1(q,1)],p),B.P,B.x,B.B,0),null),null)},
+return new A.ju("User Permissions","Direct configuration panel for dynamic SQL access conditions",B.eF,s.a.a<600?A.ac(A.b([r,B.c6,q],p),B.T,B.x,B.B):new A.rz(A.aY(A.b([A.c5(r,null,320),B.o8,A.c1(q,1)],p),B.P,B.x,B.B,0),null),!0,null)},
 aDw(a){var s,r,q,p,o,n,m,l,k,j=null,i=A.t(t.N,t.KO)
 for(s=t.P5,r=0;r<3;++r)i.m(0,B.Dl[r],A.b([],s))
 for(s=J.aR(a.c);s.p();){q=s.gM(s)
@@ -111585,7 +111586,7 @@ A.oe.prototype={}
 A.a08.prototype={
 F(a){var s=A.b3(a,B.bn,t.w).w.a.a,r=s<700?s-48:280,q=t.Pj
 q=A.S(new A.W(B.aJH,new A.aBr(r,a),q),q.h("ah.E"))
-return new A.ju("Settings","Configure system parameters, user details, permissions, and survey forms",B.eF,A.hT(B.c0,q,B.dF,16,16),null)}}
+return new A.ju("Settings","Configure system parameters, user details, permissions, and survey forms",B.eF,A.hT(B.c0,q,B.dF,16,16),!0,null)}}
 A.aBr.prototype={
 $1(a){var s=null,r=A.aQ(12),q=t.p
 return A.c5(new A.iN(A.ac(A.b([A.ay(s,A.fz(a.a,B.az,s,s),B.J,s,s,new A.aA(B.d8,s,s,r,s,s,B.X),s,44,s,s,s,s,44),B.bH,A.R(a.b,s,s,s,s,$.EM(),s,s,s),B.jX,A.R(a.c,s,s,s,s,$.lX(),s,s,s),B.bH,A.aY(A.b([A.R(a.d,s,s,s,s,A.aL(B.az,s,s,13,s,B.aA),s,s,s),B.a1Q],q),B.T,B.x,B.B,0)],q),B.P,B.x,B.B),B.aV,new A.aBq(this.b,a),!1,s),s,this.a)},
@@ -111619,7 +111620,7 @@ if(o==null||p.c==null){s=1
 break}p.O(new A.aTJ(p,a,o))
 case 1:return A.v(q,r)}})
 return A.w($async$CX,r)},
-F(a){return new A.ju("Survey Builder","Create and modify visual inspection checklist templates",B.eF,this.d?this.an3(a):this.auk(a),null)},
+F(a){return new A.ju("Survey Builder","Create and modify visual inspection checklist templates",B.eF,this.d?this.an3(a):this.auk(a),!0,null)},
 auk(a){var s,r,q,p=A.cX(a,!0,t.qV)
 A.uw(a,p.d,p.gj7())
 s=J.eA(p.c,new A.aTZ(),t.xE)
@@ -112161,7 +112162,7 @@ A.uw(a,p.f,p.gj7())
 s=J.eA(p.d,new A.aVN(),t.a)
 r=A.S(s,s.$ti.h("ah.E"))
 s=p.b
-return new A.ju(q,"Manage employee teams",B.eF,A.V2(A.b([new A.db("TeamID","Team ID",new A.aVO()),new A.db("TeamName","Team Name",new A.aVP())],t.ps),!0,!1,s,new A.aVQ(this,a),new A.aVR(this,a),new A.aVS(this,a),new A.aVT(p),null,r,q),null)},
+return new A.ju(q,"Manage employee teams",B.eF,A.V2(A.b([new A.db("TeamID","Team ID",new A.aVO()),new A.db("TeamName","Team Name",new A.aVP())],t.ps),!0,!1,s,new A.aVQ(this,a),new A.aVR(this,a),new A.aVS(this,a),new A.aVT(p),null,r,q),!0,null)},
 rf(a,b){return this.awR(a,b)},
 awR(a,b){var s=0,r=A.x(t.H),q,p,o,n,m,l,k,j
 var $async$rf=A.y(function(c,d){if(c===1)return A.u(d,r)
@@ -112261,7 +112262,7 @@ A.uw(a,n.f,n.gj7())
 s=J.eA(n.c,new A.aXh(),t.a)
 r=A.S(s,s.$ti.h("ah.E"))
 s=n.b
-return new A.ju(p,"Manage system users and login credentials",B.eF,A.V2(A.b([new A.db("UserID","User ID",new A.aXi()),new A.db(o,o,new A.aXj()),new A.db("FullName","Full Name",q),new A.db("Role","Role",new A.aXk()),new A.db("TeamName","Team",q)],t.ps),!0,!1,s,new A.aXl(this,a),new A.aXm(this,a),new A.aXn(this,a),new A.aXo(n),q,r,p),q)},
+return new A.ju(p,"Manage system users and login credentials",B.eF,A.V2(A.b([new A.db("UserID","User ID",new A.aXi()),new A.db(o,o,new A.aXj()),new A.db("FullName","Full Name",q),new A.db("Role","Role",new A.aXk()),new A.db("TeamName","Team",q)],t.ps),!0,!1,s,new A.aXl(this,a),new A.aXm(this,a),new A.aXn(this,a),new A.aXo(n),q,r,p),!0,q)},
 rj(a,b){return this.awS(a,b)},
 awS(a,b){var s=0,r=A.x(t.H),q,p,o,n,m,l
 var $async$rj=A.y(function(c,d){if(c===1)return A.u(d,r)
@@ -112603,7 +112604,7 @@ if(s)q.push(A.cC(!1,B.hm,"New",new A.aVG(m,a),!1,B.bL))
 p=A.b([new A.mi(""+J.cl(k.d),"Total Targets",B.vS,l),new A.mi(""+k.Pq(1),"ERP Customers",B.dP,l),new A.mi(""+k.Pq(2),"Showrooms",B.iG,l),new A.mi(""+k.Pq(4),"Projects",B.ex,l)],r)
 o=m.anJ(k)
 n=s?m.aBO(a,k):m.aBN(a,k)
-return new A.ju("Targets","Manage visit targets across Egypt",q,A.ac(A.b([new A.I1(p,l),B.c6,o,B.c6,n],r),B.P,B.x,B.B),l)},
+return new A.ju("Targets","Manage visit targets across Egypt",q,A.ac(A.b([new A.I1(p,l),B.c6,o,B.c6,n],r),B.P,B.x,B.B),!0,l)},
 aBO(a,b){var s,r,q,p,o,n,m,l,k=this,j=B.n.bl(k.d).toLowerCase()
 if(j.length===0)s=b.gQj()
 else{r=b.gQj()
@@ -112843,7 +112844,7 @@ n=A.S(n,n.$ti.h("ah.E"))
 n=A.a_T(!1,new A.aPD(i),n,"Select salesperson",j)
 n=A.b([p,o,m,l,k,A.ac(A.b([A.R("Salesperson *",h,h,h,h,$.i_(),h,h,h),B.b_,n],s),B.P,B.x,B.B)],s)
 k=A.fZ(h,B.by,!1,h,!0,B.a2,h,A.hz(),i.y,h,h,h,h,h,2,B.a2g,B.a7,!0,h,!0,h,!1,h,B.bq,h,h,h,h,h,h,h,h,3,h,h,!1,"\u2022",h,h,h,h,h,!1,h,h,!1,h,!0,h,B.aV,h,h,h,h,h,h,h,h,h,h,h,h,!0,B.aL,h,B.bJ,h,h,h,h)
-return new A.ju("New Visit","Plan a new field visit",r,new A.iN(A.ac(A.b([q,B.c6,new A.a5Q(n,h),B.bH,A.ac(A.b([A.R("Planned Notes",h,h,h,h,$.i_(),h,h,h),B.b_,k],s),B.P,B.x,B.B)],s),B.P,B.x,B.B),B.aV,h,!1,h),h)},
+return new A.ju("New Visit","Plan a new field visit",r,new A.iN(A.ac(A.b([q,B.c6,new A.a5Q(n,h),B.bH,A.ac(A.b([A.R("Planned Notes",h,h,h,h,$.i_(),h,h,h),B.b_,k],s),B.P,B.x,B.B)],s),B.P,B.x,B.B),B.aV,h,!1,h),!0,h)},
 alR(){var s=null,r=A.amS(this.d)
 return A.ei(!1,s,!0,A.b2b(s,A.R(r,s,s,s,s,s,s,s,s),B.cv,!1,!1,!1,!1,s,s),s,!0,s,s,s,s,s,s,s,s,s,new A.aPk(this),s,s,s,s)}}
 A.aPE.prototype={
@@ -113480,7 +113481,7 @@ if(q==null)q="Loading visit..."
 p=A.b([A.cC(!1,B.lu,"Back to Visits",new A.aXF(a),!1,B.ck),A.cC(!1,B.hm,"New Visit",new A.aXG(a),!1,B.bL)],t.p)
 if(o.c)s=B.vD
 else s=s?B.Tb:this.aDJ(a,o,r)
-return new A.ju("Visit Details",q,p,s,null)},
+return new A.ju("Visit Details",q,p,s,!1,null)},
 aDJ(a,b,c){var s=this,r=A.b3(a,B.bn,t.w).w.a.a,q=r<768,p=t.p,o=A.ac(A.b([s.aBv(c),B.dC,s.avp(a,b,c,q),B.dC,new A.xL("Visit Activities","Survey, attachments, follow-up, competitor info, and display inspection",new A.aX(B.fe,new A.MF(s.a.c,null),null),B.bb,q,null)],p),B.P,B.x,B.B),n=A.ac(A.b([s.aCa(c,q),B.dC,s.akI(c,q),B.dC,s.ays(a,b,c)],p),B.P,B.x,B.B)
 if(!(r>1024))return A.ac(A.b([o,B.dC,n],p),B.T,B.x,B.B)
 return A.aY(A.b([A.c1(o,26),B.jW,A.c1(n,10)],p),B.P,B.x,B.B,0)},
@@ -113802,7 +113803,7 @@ r=t.w
 q=A.b3(a,B.bn,r).w.a.a<600?"New":"Plan New Visit"
 q=A.b([A.cC(!1,B.hm,q,new A.aXV(a),!1,B.bL)],t.p)
 r=A.b3(a,B.bn,r).w.a.a<600?this.auY(a,p):this.ap0(a,p)
-return new A.ju("Visits",""+s+" visits total",q,r,null)},
+return new A.ju("Visits",""+s+" visits total",q,r,!0,null)},
 auY(a,b){var s,r,q,p,o,n,m=B.n.bl(this.d).toLowerCase(),l=b.c
 if(!(m.length===0)){s=J.lY(l,new A.aXS(m))
 l=A.S(s,s.$ti.h("o.E"))}s=b.b
@@ -113995,8 +113996,8 @@ return A.b2T(q,A.aY(A.b([B.uU,A.c1(A.ac(A.b([new A.ym(r.c,r.d,r.e,q,!1,q),A.c1(r
 X9(a,b){var s=A.b3(b,B.bn,t.w).w.a.a<600?B.fe:B.WV
 return A.ts(this.f,null,B.a7,s,null,B.bi)}}
 A.ag5.prototype={
-$1(a){var s=null,r=this.a
-return new A.ym(r.c,r.d,r.e,A.no(s,s,B.a1V,s,s,new A.ag4(a),s,s,s),!0,s)},
+$1(a){var s=null,r=this.a,q=r.r?A.no(s,s,B.a1V,s,s,new A.ag4(a),s,s,s):s
+return new A.ym(r.c,r.d,r.e,q,!0,s)},
 $S:730}
 A.ag4.prototype={
 $0(){return A.a_z(this.a).a9n()},
